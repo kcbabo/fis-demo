@@ -28,7 +28,7 @@
   <camelContext xmlns="http://camel.apache.org/schema/spring" useMDCLogging="true">
 
     <route id="cbr-route">
-      <from uri="timer:foo?period=1000"/>
+      <from uri="timer:foo?period=5000"/>
       <setProperty propertyName="opportunityId">
         <method beanType="org.apache.commons.lang3.RandomStringUtils" method="randomAlphanumeric(5)"/>
       </setProperty>
